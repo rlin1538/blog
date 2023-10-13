@@ -6,9 +6,9 @@ on:
       - master
 
 env:
-  GIT_USER: Username
-  GIT_EMAIL: user@example.com
-  DEPLOY_REPO: example/username.github.io
+  GIT_USER: rlin1538
+  GIT_EMAIL: 2529039819@qq.com
+  DEPLOY_REPO: rlin1538/rlin1538.github.io
   DEPLOY_BRANCH: master
 
 jobs:
