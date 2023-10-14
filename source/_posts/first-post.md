@@ -36,6 +36,8 @@ $ hexo server # 打开本地服务器预览
 $ npm install --save hexo-theme-fluid
 ```
 
+或者选择直接去GitHub下载[release源码](https://github.com/fluid-dev/hexo-theme-fluid/releases/tag/v1.9.5)，解压到hexo项目的themes目录下，重命名为fluid
+
 ## 配置
 
 修改博客目录中_config.yml
@@ -45,7 +47,7 @@ language: zh-CN  # 指定中文
 theme: fluid  # 指定主题
 ```
 
-更多配置可以参考Hexo官方文档：[Hexo 配置](https://hexo.io/zh-cn/docs/configuration)，以及Fluid官方文档：[Fluid 配置指南](https://hexo.fluid-dev.com/docs/guide/)
+更多配置可以参考Hexo官方文档：[Hexo 配置](https://hexo.io/zh-cn/docs/configuration)，以及Fluid官方文档：[Fluid 配置指南](https://hexo.fluid-dev.com/docs/guide/)。Hexo配置是博客主目录下的_config.yml，Fluid配置是themes/fluid目录下的_config.yml
 
 ## 本地部署
 
@@ -58,3 +60,9 @@ $ hexo server  # 在本地服务器看看博客：https://localhost:4000
 ```
 
 到此你已经可以在本地看到你的博客小站啦~
+
+# 部署Github Page
+
+Github Page是提供静态网站访问服务的，就是将静态网站项目传到GitHub上，他能为你提供一个url入口（如rlin1538.github.io），直接访问你的静态网站，而Hexo编译生成的就是一个静态网站。
+
+首先我们得把生成的静态网站上传到GitHub中，GitHub中得有一个对应的仓库。所以第一步是创建一个名为`GitHub用户名.github.io`的代码仓库![](001.png)
