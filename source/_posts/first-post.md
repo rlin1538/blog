@@ -2,6 +2,7 @@
 title: 建站小记
 tags: 技术总结
 date: 2023-10-13 10:00:00
+comment: true
 ---
 记录本博客搭建过程。
 
@@ -144,6 +145,12 @@ nuaa.life
 
 本站参考了这篇文章完成自动部署，友友可以参考：[利用Github Actions自动部署Hexo博客](https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/)
 
+
+# 博客拓展
+
+## 评论系统
+
+参考：https://www.jianshu.com/p/785d727810b3
 
 ---
 
