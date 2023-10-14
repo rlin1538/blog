@@ -42,7 +42,7 @@ $ npm install --save hexo-theme-fluid
 
 修改博客目录中_config.yml
 
-```
+``` yml
 language: zh-CN  # 指定中文
 theme: fluid  # 指定主题
 ```
@@ -66,3 +66,74 @@ $ hexo server  # 在本地服务器看看博客：https://localhost:4000
 Github Page是提供静态网站访问服务的，就是将静态网站项目传到GitHub上，他能为你提供一个url入口（如rlin1538.github.io），直接访问你的静态网站，而Hexo编译生成的就是一个静态网站。
 
 首先我们得把生成的静态网站上传到GitHub中，GitHub中得有一个对应的仓库。所以第一步是创建一个名为`GitHub用户名.github.io`的代码仓库![](001.png)
+
+然后修改博客配置_config.yml，改成你的信息
+
+``` yml
+deploy:
+  type: git
+  repo: git@github.com:xxxx/xxxx.github.io.git # xxxx是你的GitHub用户名
+  branch: master
+```
+
+然后生成站点文件并推送到远程仓库即可，推送时需要填GitHub账户和密码
+
+``` bash
+hexo clean  # 保险起见，每次我们都清空一下
+hexo deploy --generate
+```
+
+推送完成后，打开你的Github Page即可看到小站啦！（可能会有一分钟左右的延迟）
+
+参考：[部署|Hexo](https://hexo.io/zh-cn/docs/one-command-deployment)
+
+# 创作
+
+要开始写博客，可以通过在博客目录执行如下命令创建一篇新文章：
+
+``` bash
+hexo new test
+```
+hexo会在source/_posts目录下创建一个test.md文件，我们在这里使用markdown语法写博客即可
+
+或者你可以直接在source/_posts目录创建md文件。
+
+``` yml
+---
+title: test
+date: 2022-04-22 21:17:39
+tags: hexo
+categories: 教程
+---
+
+# 一级标题
+
+## 二级标题
+
+这里开始我们的写作吧
+```
+
+上面文件最上方以---分隔的区域，用于指定文章属性（[Front-matter | Hexo](https://hexo.io/zh-cn/docs/front-matter)），常用的属性就是title, date, tag, categories，分别指定文章标题、建立日期、标签和分类。其中标题和建立日期都是自动生成的，我们不用管。tag和categories一般是由我们自己设置的
+
+# 自定义域名
+
+我们可以自己买个域名，然后把GitHub Page绑定到自己的域名下。
+我用的域名商是[NameSilo](https://www.namesilo.com/)，十几块就能买到一个一年的域名，你也可以选择其他，比如国内的[阿里万网](https://wanwang.aliyun.com)
+
+首先需要在博客项目source目录中创建一个CNAME文件，填入你的域名：
+
+```
+nuaa.life
+```
+
+接着我们进入域名服务商控制台，配置域名解析：![](2023-10-14-13-27-21.png)
+目标填你的GitHub Page地址，然后在GitHub博客项目中点Settings，选择Pages，填写Custom domain为你的域名，然后你就可以通过你的个人域名访问博客小站啦
+
+> 国内的域名商一般自带的控制台服务挺好用，DNS配置方便
+> 国外的可以用[Cloudflare](https://cloudflare.com)来配置域名解析，如何使用网上已有很多教程。
+
+参考文章：https://juejin.cn/post/7090201115005812767
+
+# 自动部署
+
+到此为止，我们需要在本地去编译网站静态文件，然后上传
