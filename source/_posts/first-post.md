@@ -136,4 +136,15 @@ nuaa.life
 
 # 自动部署
 
-到此为止，我们需要在本地去编译网站静态文件，然后上传
+到此为止，我们需要在本地去编译网站静态文件，然后上传。
+
+为方便博客撰写以及源码备份，我们可以采用Github Action自动部署，即将本地hexo源码上传到GitHub（不是上文提到的编译后的静态网站文件），利用GitHub提供的Actions，自动流转流水线编译出静态网站文件传到rlin1538.github.io仓库中。
+
+这样，我们只需在本地写md，然后用git提交push到GitHub中即可，十分的方便！
+
+本站参考了这篇文章完成自动部署，友友可以参考：[利用Github Actions自动部署Hexo博客](https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/)
+
+
+---
+
+> # 开始享受你的博客之旅吧~~~
