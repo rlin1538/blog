@@ -2,7 +2,7 @@
 title: 建站小记
 tags: 技术总结
 date: 2023-10-13 10:00:00
-comment: true
+comment: 'utterances'
 ---
 记录本博客搭建过程。
 

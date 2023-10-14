@@ -744,7 +744,7 @@ utterances:
   issue-term: pathname
   theme: github-light
   crossorigin: anonymous
-  label: utterances
+  label: #
   theme_dark: github-dark
 
 # Disqus
