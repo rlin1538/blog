@@ -807,7 +807,7 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: 'https://blog-mor8xx22e-rlin1538s-projects.vercel.app/'
+  serverURL: 'https://vercel.nuaa.life/'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
