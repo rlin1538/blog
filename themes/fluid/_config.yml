@@ -969,6 +969,8 @@ about:
 
 messageBoard:
   enable: true
+  title: 留言板
+  subtitle: 留言板
   banner_img: /img/planet.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
