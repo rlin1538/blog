@@ -2,7 +2,7 @@
 title: 建站小记
 tags: 技术总结
 date: 2023-10-13 10:00:00
-comment: 'utterances'
+comment: true
 ---
 记录本博客搭建过程。
 
@@ -151,6 +151,8 @@ nuaa.life
 ## 评论系统
 
 参考：https://www.jianshu.com/p/785d727810b3
+
+或者：https://zhuanlan.zhihu.com/p/152369801
 
 ---
 
