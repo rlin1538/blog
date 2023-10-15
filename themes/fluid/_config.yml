@@ -795,9 +795,9 @@ valine:
   requiredFields: []
   pageSize: 10
   lang: 'zh-CN'
-  highlight: false
-  recordIP: false
-  serverURLs: 
+  highlight: true
+  recordIP: true
+  serverURLs: https://orjqlo6d.api.lncldglobal.com
   emojiCDN:
   emojiMaps:
   enableQQ: false
