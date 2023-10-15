@@ -346,7 +346,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    - { key: "messageBoard", link: "/messageBoard/", icon: "iconfont icon-comment" }
+    - { key: "留言板", link: "/messageBoard/", icon: "iconfont icon-comment" }
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -967,6 +967,12 @@ about:
     - { class: "iconfont icon-douban-fill", link: "https://www.douban.com/people/154619347/", tip: "豆瓣" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
+
+#---------------------------
+# 留言板页
+# Message Board Page
+#---------------------------
+
 messageBoard:
   enable: true
   title: 留言板
@@ -976,7 +982,7 @@ messageBoard:
   banner_mask_alpha: 0.3
   avatar: /img/avatar.jpg
   name: "RLin"
-  intro: "期待一趟旅程 精彩万分 你却还在等 ~"
+  intro: "如果能有一天 再一次重返光荣 ~ 记得找我! 我的好朋友 ~"
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/rlin1538", tip: "GitHub" }
     - { class: "iconfont icon-douban-fill", link: "https://www.douban.com/people/154619347/", tip: "豆瓣" }
