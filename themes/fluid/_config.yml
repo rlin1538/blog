@@ -724,7 +724,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: valine
+    type: waline
 
 
 #---------------------------
@@ -807,15 +807,19 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: ''
+  serverURL: 'https://blog-mor8xx22e-rlin1538s-projects.vercel.app/'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
   lang: 'zh-CN'
+  reaction: true
   emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
   dark: 'html[data-user-color-scheme="dark"]'
   wordLimit: 0
   pageSize: 10
+  locale:
+    placeholder: 开喷 ~ 
+    reactionTitle:
 
 # 畅言 Changyan
 # 基于第三方的服务

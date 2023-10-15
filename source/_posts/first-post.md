@@ -152,7 +152,7 @@ nuaa.life
 
 参考：https://www.jianshu.com/p/785d727810b3
 
-或者：https://zhuanlan.zhihu.com/p/152369801
+或者：https://www.zywvvd.com/notes/hexo/theme/fluid/fluid-waline/fluid-waline/
 
 ---
 
