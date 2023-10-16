@@ -582,7 +582,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: true
+    enable: false
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -646,7 +646,7 @@ post:
 
     # CreativeCommons license
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
-    license: 'BY'
+    license: 'BY-NC-SA'
 
     # 显示作者
     author:
@@ -661,7 +661,7 @@ post:
     # 显示更新日期
     # Show update date
     update_date:
-      enable: false
+      enable: true
       format: "LL"
 
   # 文章底部上一篇下一篇功能
@@ -1052,17 +1052,17 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
+    enable: true
     content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: waline
 
 
 #---------------------------
