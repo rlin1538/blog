@@ -15,14 +15,20 @@ https://blog.csdn.net/qq_45228845/article/details/125583891
 
 # 问题集合
 
-1. ![](2023-10-16-19-58-11.png)`ModuleNotFoundError: No module named ‘kornia‘` 
-
-    或者`Cannot statically infer the expected size of a list in this context` 
+1.  kornia问题
+    ![](2023-10-16-19-58-11.png)
+    ```
+    ModuleNotFoundError: No module named ‘kornia‘
+    ```
+    或者
+    ```
+    Cannot statically infer the expected size of a list in this context
+    ```
 
     > 解决方案：安装正确版本的kornia
     > https://blog.csdn.net/weixin_52288941/article/details/133518555
 
-2. demo跑通了但是：
+2.  demo跑通了但是：
     ```
     GLFW Error: X11: The DISPLAY environment variable is missing
     ```
