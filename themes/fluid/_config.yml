@@ -1020,7 +1020,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/planet.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
@@ -1030,7 +1030,7 @@ links:
       title: "Yuichi",
       intro: "变成光守护嘉然小姐",
       link: "https://yuichi.top/",
-      avatar: "/img/favicon.png"
+      avatar: "/img/yuichi.jpg"
     }
     - {
       title: "Fluid Docs",
