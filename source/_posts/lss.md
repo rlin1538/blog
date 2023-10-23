@@ -32,3 +32,18 @@ comment: true
 
 
 # 复现
+
+https://github.com/nv-tlabs/lift-splat-shoot
+
+首先需要用到nuscenes数据集（https://www.nuscenes.org），下载mini的完整数据集以及map extension 1.3
+
+然后下载预训练的模型： https://drive.google.com/file/d/18fy-6beTFTZx5SrYLs9Xk7cY-fGSm7kw/view?usp=sharing
+
+然后可以运行如下代码生成鸟瞰图：
+
+``` python
+python main.py viz_model_preds mini --model
+f=E:\Download\model525000.pt --dataroot=F:\Datasets\Nuscenes-mini --map_folder=F:\Datasets\Nuscenes-mini
+
+# 其中--modelf为预训练模型目录，--dataroot为nuscenes数据集根目录，--map_folder为map extension根目录
+```
