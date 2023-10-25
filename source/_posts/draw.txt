@@ -1,0 +1,12 @@
+
+## Flutter 踩坑
+
+在改完上述代码之后，仍然还卡在 Running Gradle task 'assembleDebug'... 这个步骤。而且会报网络的 Exception。在求助了 Android 开发同学之后，终于找到了原因。原来 VSCode 并没有显示完整的报错信息。使用 AS 就可以看到原来是 Gradle 的包没有找到。
+
+所以并不推荐使用 VSCode。
+
+由于 IDE 自动安装 Gradle 会非常慢。推荐手动安装。首先在 android/gradle/wrapper/gradle-wrapper.properties 可以看到本项目使用的 Gradle 版本。在 Gradle 的官网（https://gradle.org/）就可以下载到完整的包。
+
+在 https://services.gradle.org/distributions/ 下载对应版本的包，如 gradle-5.6.2-all.zip。
+
+下载完成之后解压到 ～/.gradle/wrapper/dists/gradle-5.6.2-all/xxx 下。其中 xxx 为一串如 9st6wgf78h16so49nn74lgtbb 的字符串。
