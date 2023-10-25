@@ -44,3 +44,14 @@ https://dev.to/curtlycritchlow/how-to-fix-assetmanifest-is-imported-from-both-pa
 https://flutter-developer.medium.com/solved-flutter-error-could-not-resolve-all-artifacts-for-configuration-56deea1c5d12
 
 解决方案似乎是忽略掉某些错误🤔
+
+---
+
+### Android 12 app安装错误
+
+```
+Targeting S+ (version 31 and above) requires that an explicit value for android:exported be defined when intent filters are present
+```
+
+https://stackoverflow.com/questions/70333565/targeting-s-version-31-and-above-requires-that-an-explicit-value-for-android
+
