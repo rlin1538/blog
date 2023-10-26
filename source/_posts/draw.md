@@ -55,3 +55,10 @@ Targeting S+ (version 31 and above) requires that an explicit value for android:
 
 https://stackoverflow.com/questions/70333565/targeting-s-version-31-and-above-requires-that-an-explicit-value-for-android
 
+---
+
+### 签名与流水线CI/CD
+
+https://52smile.vip/2023/08/03/CI-CD/index.html
+
+https://coldstone.fun/post/2020/02/26/flutter-github-actions/
