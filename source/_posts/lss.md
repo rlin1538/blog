@@ -47,3 +47,10 @@ f=E:\Download\model525000.pt --dataroot=F:\Datasets\Nuscenes-mini --map_folder=F
 
 # 其中--modelf为预训练模型目录，--dataroot为nuscenes数据集根目录，--map_folder为map extension根目录
 ```
+
+---
+> # 参考
+> https://blog.csdn.net/zyw2002/article/details/127906938
+> https://blog.csdn.net/CV_Autobot/article/details/128213478
+> https://blog.csdn.net/weixin_41803339/article/details/127140039
+> https://blog.csdn.net/weixin_42108183/article/details/128524399?spm=1001.2014.3001.5501

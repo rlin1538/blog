@@ -30,3 +30,8 @@ comment: true
 # 代码
 
 https://github.com/mileyan/pseudo_lidar
+
+
+> # 参考
+> https://blog.csdn.net/weixin_41965898/article/details/119953338
+> https://zhuanlan.zhihu.com/p/52803631
