@@ -3,8 +3,8 @@ title: 《Rick and Morty》 S7E4
 tags: 
     - 影视
     - 读后感
-date: 2023-11-07 22:00:00
-banner_img: /img/R&MS7.png
+date: 2023-11-12 22:00:00
+banner_img: /img/post_banner/R&MS7.png
 comment: true
 ---
 
