@@ -13,6 +13,10 @@ Livox Mid-70是一款高性价比、安全可靠的激光探测测距仪传感�
 
 ![](2023-12-13-17-03-39.png)
 
+### 外部电源设计
+
+采用现成的18650锂电池组（某宝入手，3000毫安时的五十多块钱），带DC公头和母头。mid-70的电源线有正负极接线，安装带附送的DC母头上，插到电池组上完成供电。
+
 > [Mid-70 用户手册](https://terra-1-g.djicdn.com/65c028cd298f4669a7f0e40e50ba1131/Download/Mid-70/new/Livox%20Mid-70%20User%20Manual_CHS_v1.2.pdf)
 
 # 环境搭建
@@ -69,3 +73,55 @@ sudo make install
 
 ### Livox ROS 驱动
 
+1. 下载livox ros驱动程序
+``` bash
+git clone https://github.com/Livox-SDK/livox_ros_driver.git ws_livox/src
+```
+
+2. 构建livox ros驱动
+``` bash
+cd ws_livox
+catkin_make
+```
+
+3. 更新ROS包环境
+``` bash
+source ./devel/setup.sh
+```
+
+> 到此，环境基本搭建完毕，可以使用如下命令启动Rviz连接激光雷达查看实时点云
+> ```
+> roslaunch livox_ros_driver livox_lidar_rviz.launch
+> ```
+> 
+> https://github.com/Livox-SDK/livox_ros_driver/blob/master/README_CN.md
+
+# 部分算法
+
+## Livox_mapping
+
+这个是Livox官方提供的建图软件包，适用于低速运动下的mapping。
+
+![](<mid40_hall (1).gif>)
+
+> 按上述环境搭建后，一般可以直接构建本软件包，如有提示缺少依赖，可以按官方文档安装PCL && Eigen && openCV
+
+#### 软件包构建
+
+``` bash
+cd ~/ws_livox/src
+git clone https://github.com/Livox-SDK/livox_mapping.git
+cd ..
+catkin_make
+source ~/ws_livox/devel/setup.bash
+```
+
+#### 运行
+
+将雷达连接到电脑，依次执行如下命令（需要开两个终端）：
+``` bash
+roslaunch livox_mapping mapping_mid.launch
+roslaunch livox_ros_driver livox_lidar.launch
+```
+
+随即将启动Rivz，移动激光雷达，完成建图。
