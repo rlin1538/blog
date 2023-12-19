@@ -48,6 +48,16 @@ wget http://fishros.com/install -O fishros && . fishros
 ```
 一路按推荐选项即可。
 选择的是ROS1的环境，暂时不需要ROS2。
+
+安装完成后执行`roscore`，如没报错则完成ROS环境搭建，如提示不存在命令，则需更新一下source ROS目录下的setup.sh
+
+``` bash
+source /opt/ros/noetic/setup.sh
+echo "source /opt/ros/noetic/setup.sh" >> ~/.bashrc
+source ~/.bashrc
+
+## noetic 为你的ROS版本名称
+```
 >
 ### Livox-SKD
 
@@ -105,6 +115,9 @@ source ./devel/setup.sh
 ![](<mid40_hall (1).gif>)
 
 > 按上述环境搭建后，一般可以直接构建本软件包，如有提示缺少依赖，可以按官方文档安装PCL && Eigen && openCV
+> openCV安装：https://blog.csdn.net/public669/article/details/99044895
+> https://blog.csdn.net/qianbin3200896/article/details/107894029?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_baidulandingword-10&spm=1001.2101.3001.4242
+> 推荐openCV3.4的
 
 #### 软件包构建
 
