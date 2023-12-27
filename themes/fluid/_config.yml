@@ -1033,6 +1033,18 @@ links:
       avatar: "/img/yuichi.jpg"
     }
     - {
+      title: "Hash-Lee",
+      intro: "躺哥",
+      link: "https://hash-lee.life/",
+      avatar: "https://hash-lee.life/medias/self.jpg"
+    }
+    - {
+      title: "Duoduo",
+      intro: "钱多多睡不醒",
+      link: "https://www.qianduoduosleepy.top/",
+      avatar: "/img/duoduo.jpg"
+    }
+    - {
       title: "Fluid Docs",
       intro: "主题使用指南",
       link: "https://hexo.fluid-dev.com/docs/",
