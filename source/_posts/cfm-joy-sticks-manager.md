@@ -13,6 +13,13 @@ comment: true
 
 本软件是穿越火线：枪战王者的第三方键位码工具，支持上传本地键位、使用键位码替换本地键位、键位查看功能。
 
+### 下载
+
+### [CFM键位码工具.apk](/download/CFM_Tool.apk)
+
+### 开源地址
+https://github.com/rlin1538/Cfm_Joy_Manager
+
 ### 应用截图
 <center class="half">
 <img src="https://github.com/rlin1538/Cfm_Joy_Manager/assets/60032065/858f00c3-000e-4ae5-a454-3bffc8cea657" width=200/>
@@ -23,12 +30,6 @@ comment: true
 ![Screenshot_2024-03-18-13-17-12-158_com rlin cfm_joy_manager](https://github.com/rlin1538/Cfm_Joy_Manager/assets/60032065/3d816563-4d39-4fc8-ad35-34b9d459a360)
 
 
-### 下载
-
-### [CFM键位码工具.apk](/download/CFM_Tool.apk)
-
-### 开源地址
-https://github.com/rlin1538/Cfm_Joy_Manager
 
 ## CFM键位码第三方小工具开发记录
 
