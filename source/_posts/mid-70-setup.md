@@ -146,3 +146,57 @@ roslaunch livox_ros_driver livox_lidar.launch
 > Error transforming odometry 'Odometry' from frame '/camera_init' to frame 'camera_init'
 > 这时候需要将代码里的`/camera_init`改成`camera_init`
 > https://www.cnblogs.com/xinzhaodc/p/16143348.html
+
+## Livox_detection
+
+Livox官方提供的激光点云目标检测算法，可以检测大部分车辆和行人。
+![](https://vdn.vzuu.com/SD/ae6cb25e-aba3-11ec-a4b6-020179c7da27.mp4?disable_local_cache=1&bu=078babd7&c=avc.0.0&f=mp4&expiration=1716816311&auth_key=1716816311-0-0-2939c4e6e6990f152598ba5d289315d4&v=ali&pu=078babd7)
+
+> github链接：https://github.com/Livox-SDK/livox_detection
+
+#### 环境安装
+
+``` bash
+# python=3.8
+# pytorch=1.8.2
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia
+# numpy=1.23.1
+conda install numpy=1.23.1
+# ros_numpy
+sudo apt-get install ros-noetic-ros-numpy
+# rospkg=1.4.0
+pip install rospkg==1.4.0
+```
+
+#### 软件包构建
+
+``` bash
+git clone https://github.com/Livox-SDK/livox_detection.git
+cd livox_detection
+python3 setup.py develop
+```
+
+#### 运行
+
+需要开四个终端
+
+1. 运行roscore
+``` bash
+roscore
+```
+
+2. 运行模型
+``` bash 
+cd tools
+python3 test_ros.py --pt ../pt/livox_model_1.pt
+```
+
+3. 点云发布
+``` bash
+roslaunch livox_ros_driver livox_lidar.launch
+```
+
+4. 可视化结果
+``` bash
+rviz -d ../tools/rviz.rviz
+```
