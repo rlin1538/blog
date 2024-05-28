@@ -151,9 +151,7 @@ roslaunch livox_ros_driver livox_lidar.launch
 
 Livox官方提供的激光点云目标检测算法，可以检测大部分车辆和行人。
 
-<video width="480" height="320" controls>
-<source src="https://vdn.vzuu.com/SD/ae6cb25e-aba3-11ec-a4b6-020179c7da27.mp4?disable_local_cache=1&bu=078babd7&c=avc.0.0&f=mp4&expiration=1716816311&auth_key=1716816311-0-0-2939c4e6e6990f152598ba5d289315d4&v=ali&pu=078babd7">
-</video>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=896508475&bvid=BV1wA4y1D7qZ&cid=720277560&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 > github链接：https://github.com/Livox-SDK/livox_detection
 
