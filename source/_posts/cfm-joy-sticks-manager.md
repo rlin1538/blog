@@ -15,7 +15,7 @@ comment: true
 
 ### 下载
 
-### [CFM键位码工具.apk](/download/CFM_Tool.apk)
+### [CFM键位码工具V1.1.apk](/download/CFM_Tool.apk)
 
 ### 开源地址
 https://github.com/rlin1538/Cfm_Joy_Manager
